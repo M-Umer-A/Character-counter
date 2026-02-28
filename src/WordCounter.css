@@ -1,34 +1,160 @@
-.Container_middle
-{
+.Container_middle {
     display: flex;
     justify-content: space-between;
-}
- 
-.left
-{
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  
+  /* ── INPUT SIDE ── */
+  .right {
     width: 500px;
-    background-color:#EEF1F6; 
-    height: 350px;
-     
-}
-.Container_middle_para
-{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* ── BUTTON ROW ── */
+  .button-div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .button-65 {
+    appearance: none;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: Inter, -apple-system, system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 44px;
+    padding: 0 18px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  
+  .button-65:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+  }
+  
+  .button-65:active {
+    transform: translateY(1px);
+  }
+  
+  .btn-delete       { background-color: #e53935; }
+  .btn-save         { background-color: #1e88e5; }
+  .btn-history      { background-color: #43a047; }
+  .btn-clear-history{ background-color: #757575; }
+  
+  /* ── RESULTS SIDE ── */
+  .left {
+    width: 340px;
+    background-color: #eef1f6;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 200px;
+  }
+  
+  .Container_middle_para {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-        /* flex-wrap: nowrap; */
+    margin-bottom: 16px;
   }
   
-  .flex-container > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
+  .Container_middle_para h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .result-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 20px;
     text-align: center;
-    line-height: 25px;
-    font-size: 18px;
+    min-width: 90px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  
+  .result-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e88e5;
+    margin: 0;
+  }
+  
+  .result-label {
+    font-size: 13px;
+    color: #666;
+    margin: 4px 0 0;
+  }
+  
+  /* ── HISTORY PANEL ── */
+  .history-panel {
+    margin-top: 32px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .history-panel h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  .no-history {
+    color: #999;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .history-entry {
+    border-left: 3px solid #1e88e5;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    background: #f8f9fc;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .history-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .history-text {
+    font-size: 14px;
+    color: #444;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  
+  /* ── APP TITLE ── */
+  .app-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+    color: #1e88e5;
+    margin-bottom: 28px;
   }
